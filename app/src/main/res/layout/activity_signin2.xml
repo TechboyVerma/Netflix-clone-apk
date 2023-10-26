@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".signin2">
+
+
+    <!--uper baar-->
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        android:gravity="top"
+        tools:ignore="MissingConstraints">
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text1"
+            android:text="HELP"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="RtlCompat" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:text="SIGN IN"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!--uper-->
+    <Space
+        android:layout_below="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/space"/>
+
+    <!--middel-->
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="504dp"
+        android:layout_below="@+id/space"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlimited movies, TV shows &amp; more"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="As a member,you can watch exclusive\nTV shows and movies on the mobile\napp and all your other devices."
+            android:textColor="#8E8989"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            android:textColorHint="#8E8989"
+            app:hintTextColor="#8E8989">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textWebEmailAddress"
+                android:background="@drawable/green"
+                android:hint="Email"
+                android:textColor="#8E8989"
+                android:textColorHint="#8E8989" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passContainer"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#8E8989"
+            android:textColorHint="#8E8989"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#726C6C">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button"
+                android:hint="Password"
+
+                android:inputType="textWebPassword"
+                android:maxLength="10"
+                android:textColor="#8E8989"
+                android:textColorHint="#8E8989" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/siginbutton"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/boxStrokeColorInvalid"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:progressTint="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="CREATE ACCOUNT"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Signup With Phone Number"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

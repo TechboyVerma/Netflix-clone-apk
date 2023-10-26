@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/menu_item2"
+        android:icon="@drawable/tv_retro"
+        android:title="@string/tv" />
+
+    <item
+        android:id="@+id/menu_item3"
+        android:icon="@drawable/animated_icon"
+        android:title="Anime" />
+
+    <item
+        android:id="@+id/menu_item4"
+        android:icon="@drawable/sports"
+        android:title="@string/sports" />
+
+    <item
+        android:id="@+id/menu_item5"
+        android:icon="@drawable/download_icon"
+        android:title="Download" />
+
+
+    <!-- Add more menu items as needed -->
+</menu>

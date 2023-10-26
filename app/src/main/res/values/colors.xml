@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Red">#e14124</color>
+
+    <color name="boxStrokeColorValid">#00FF00</color> <!-- Green for valid input -->
+    <color name="boxStrokeColorInvalid">#FF0000</color> <!-- Red for invalid input -->
+    <color name="your_search_bar_color">#626261</color>
+    <color name="purple">#2A0D5B</color>
+
+    <color name="halo_or">#E36D13</color>
+</resources>

@@ -14,32 +14,28 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Netflix.NoActionBar"
         tools:targetApi="31">
+
         <activity
-            android:name=".frangments.download"
+            android:name=".Activites.HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activites.EmailVerificationActivity"
             android:exported="false" />
         <activity
-            android:name=".searching"
+            android:name=".Activites.signin2"
             android:exported="false" />
         <activity
-            android:name=".netflix"
+            android:name=".Activites.sign_up"
             android:exported="false" />
         <activity
-            android:name=".EmailVerificationActivity"
+            android:name=".Activites.sign_in"
             android:exported="false" />
         <activity
-            android:name=".signin2"
+            android:name=".Activites.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".sign_up"
-            android:exported="false" />
-        <activity
-            android:name=".sign_in"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Splash_screen"
+            android:name=".Activites.Splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
